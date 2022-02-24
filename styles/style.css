@@ -1,0 +1,106 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(../fonts/Norse-Bold.otf);
+}
+
+/* CSS RESET */ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CUSTOM PROPERTIES */ 
+:root {
+    --btn-bg: #596D48;
+    --input-border: #E5E7EB;
+}
+
+body {
+    font-family: 'Linear Regular', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+main {
+    display: flex;
+    width: 100vw;
+}
+
+div {
+    margin: 0.3em;
+    padding: 0.3em;
+}
+
+/* BACKGROUND IMAGE CONTAINER */
+.hero {
+    height: 100vh;
+    width: 45vw;
+    margin-left: 2em;
+    background-image: url(../img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.hero a {
+    color: #fff;
+}
+
+
+/* logo wrap should have an opacity setting without affecting the opacity of the text */
+.logo-wrap {
+    font-family: norse-bold, sans-serif;
+    display: flex;
+    place-items: center;
+    place-content: center;
+}
+
+.logo {
+     width: clamp(50px, 100px, 25%);  
+     height: auto;
+}
+
+.credit {
+    font-size: 0.6rem;
+    text-align: center;
+}
+
+/* TEXT SECTION */
+
+/* FORM */
+
+
+
+/* TEMP STYLES */
+
+main {
+    border: 2px solid red;
+}
+
+.hero {
+    border: 2px solid blue;
+}
+
+.hero > * {
+    border: 2px solid orangered;
+}
+
+.content-wrap {
+    border: 2px solid blue;
+}
+
+.content-wrap > * {
+    border: 2px solid limegreen;
+}
+
+.form-wrap > * {
+    border: 2px solid gold;
+}
+
+form > ul > * {
+    padding: .3em;
+    border: 2px solid pink;
+}
