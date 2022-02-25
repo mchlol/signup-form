@@ -20,23 +20,28 @@ body {
     font-family: 'Linear Regular', Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    line-height: 1.2;
 }
 
 main {
     display: flex;
-    width: 100vw;
+    width: 80vw;
 }
 
-div {
-    margin: 0.3em;
-    padding: 0.3em;
+.container {
+    padding: 1em;
 }
 
 /* BACKGROUND IMAGE CONTAINER */
+
+/* put this section on the top for small screens */
 .hero {
     height: 100vh;
     width: 45vw;
-    margin-left: 2em;
     background-image: url(../img/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     display: flex;
@@ -50,17 +55,20 @@ div {
 }
 
 
-/* logo wrap should have an opacity setting without affecting the opacity of the text */
 .logo-wrap {
     font-family: norse-bold, sans-serif;
     display: flex;
     place-items: center;
     place-content: center;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    margin: 0;
 }
 
 .logo {
      width: clamp(50px, 100px, 25%);  
      height: auto;
+     z-index: 2;
 }
 
 .credit {
@@ -70,26 +78,82 @@ div {
 
 /* TEXT SECTION */
 
+.content-wrap {
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+/* select all children of content wrap */
+.content-wrap {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-weight: bold;
+}
+
 /* FORM */
 
+.form-wrap {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-wrap > p {
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-right: 5em;
+}
+
+.input-wrap {
+    padding: 0.3em;
+}
+
+form label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: block;
+}
+
+input {
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button {
+    background-color: var(--btn-bg);
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    padding: 1em;
+}
 
 
-/* TEMP STYLES */
+/* ### TEMP STYLES ### */
 
-main {
+/* main {
     border: 2px solid red;
 }
 
-.hero {
+main > * {
     border: 2px solid blue;
 }
 
 .hero > * {
     border: 2px solid orangered;
-}
-
-.content-wrap {
-    border: 2px solid blue;
 }
 
 .content-wrap > * {
@@ -100,7 +164,6 @@ main {
     border: 2px solid gold;
 }
 
-form > ul > * {
-    padding: .3em;
+form > * {
     border: 2px solid pink;
-}
+} */
