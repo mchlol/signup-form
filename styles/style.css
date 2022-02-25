@@ -226,6 +226,10 @@ form > * {
     .content-wrap {
         width: auto;
     }
+
+    .hero {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
