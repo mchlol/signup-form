@@ -34,7 +34,7 @@
 
         <div class="content-wrap">
 
-            <div class="text container">
+            <div class="text padding">
                 <p>This is not a real online service! You know you need something like this in your life to help you
                     realise your deepest dreams.<br>
                     Sign up <em>now</em> to get started.
@@ -44,20 +44,20 @@
                 </p>
             </div>
 
-            <div class="form-wrap container">
+            <div class="form-wrap padding">
                 <p>Let's do this!<br>
                     <span>* Required field</span>
                 </p>
 
-                <form action="#" method="post">
+                <form action="#" method="post" id="signup-form">
 
                     <div class="input-wrap">
                         <label for="first-name">First name *</label>
-                        <input type="text" name="first-name" id="first-name" required>
+                        <input type="text" name="first-name" id="first-name" placeholder="Thor" required>
                     </div>
                     <div class="input-wrap">
                         <label for="last-name">Last name</label>
-                        <input type="text" name="last-name" id="last-name">
+                        <input type="text" name="last-name" id="last-name" class="focus" placeholder="Odinson">
                     </div>
                     <div class="input-wrap">
                         <label for="email">Email *</label>
@@ -67,7 +67,7 @@
                         <label for="phone">Phone number</label>
                         <input type="tel" name="phone" id="phone">
                     </div>
-                    <div class="input-wrap">
+                    <div class="input-wrap error">
                         <label for="password">Password *</label>
                         <input type="password" name="password" id="password" required>
                     </div>
@@ -79,8 +79,8 @@
 
             </div>
 
-            <div class="login container">
-                <button>Create Account</button>
+            <div class="login padding">
+                <button type="submit" form="signup-form" value="Create Account">Create Account</button>
                 <p>Already have an account? <a href="#">Log in</a></p>
             </div>
 
