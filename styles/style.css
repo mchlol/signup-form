@@ -40,7 +40,7 @@ main {
 
 /* put this section on the top for small screens */
 .hero {
-    height: 100vh;
+    /* height: 100%; */
     width: 45vw;
     background-image: url(../img/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
@@ -63,17 +63,18 @@ main {
     background-color: rgba(0,0,0,0.3);
     width: 100%;
     margin: 0;
+    font-size: 2rem;
 }
 
 .logo {
      width: clamp(50px, 100px, 25%);  
      height: auto;
-     z-index: 2;
 }
 
 .credit {
     font-size: 0.6rem;
     text-align: center;
+    opacity: 0.8;
 }
 
 /* TEXT SECTION */
@@ -114,7 +115,7 @@ form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    margin-right: 5em;
+    /* margin-right: 5em; */
 }
 
 .input-wrap {
@@ -167,3 +168,21 @@ main > * {
 form > * {
     border: 2px solid pink;
 } */
+
+@media (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+
+    .hero {
+        width: 80vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
