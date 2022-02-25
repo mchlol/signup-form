@@ -11,4 +11,6 @@ Use CSS positioning
 
 ### Notes
 
-This would have been a good opportunity to use TailwindCSS.  
+- You CAN link a button to a form even when it is outside of the form element - [W3Schools](https://www.w3schools.com/tags/att_button_form.asp)
+- This would have been a good opportunity to use TailwindCSS.  
+- Validation is done with classes so is not correct - as per project instructions I have used classes only for the purposes of this exercise.
