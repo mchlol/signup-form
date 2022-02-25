@@ -30,6 +30,7 @@ body {
 main {
     display: flex;
     width: 80vw;
+    height: 100vh;
 }
 
 .container {
@@ -38,10 +39,9 @@ main {
 
 /* BACKGROUND IMAGE CONTAINER */
 
-/* put this section on the top for small screens */
 .hero {
-    /* height: 100%; */
-    width: 45vw;
+    height: 100%;
+    width: 40vw;
     background-image: url(../img/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     display: flex;
@@ -62,7 +62,7 @@ main {
     place-content: center;
     background-color: rgba(0,0,0,0.3);
     width: 100%;
-    margin: 0;
+    margin: 1em 0 1em 0;
     font-size: 2rem;
 }
 
@@ -95,6 +95,7 @@ main {
     flex-direction: column;
     justify-content: end;
     font-weight: bold;
+    max-width: 45ch;
 }
 
 /* FORM */
@@ -115,7 +116,6 @@ form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    /* margin-right: 5em; */
 }
 
 .input-wrap {
@@ -124,7 +124,7 @@ form {
 
 form label {
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     display: block;
 }
 
@@ -180,9 +180,13 @@ form > * {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     form {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
+    }
+
+    .content-wrap {
+        display: block;
     }
 }
