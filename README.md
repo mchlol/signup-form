@@ -5,7 +5,7 @@ Intermediate HTML & CSS project for [The Odin Project](https://www.theodinprojec
 
 ## Challenge
 
-Follow [this design brief](https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/sign-up-form.png)
+Follow [this design brief](https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/sign-up-form.png)  
 Create and style a form with validation  
 Use CSS positioning  
 
